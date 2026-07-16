@@ -15,10 +15,10 @@ a cozy, matcha-infused theme for the mindful spirit! this is a custom, nature-in
 
 ## 🍵 credits
 
-chatgpt
+* chatgpt
 
-azula
+* azula.cs
 
-https://catppuccin-userstyles-customizer.uncenter.dev/
+* https://catppuccin-userstyles-customizer.uncenter.dev/
 
-https://github.com/refact0r/system24
+* https://github.com/refact0r/system24
