@@ -15,9 +15,9 @@ a cozy, matcha-infused theme for the mindful spirit! this is a custom, nature-in
 
 ## 🍵 credits
 
-* chatgpt
+* **azula.cs**
 
-* azula.cs
+* chatgpt
 
 * gemini
 
