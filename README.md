@@ -16,4 +16,4 @@ a cozy, matcha-infused theme for the mindful spirit! this is a custom, nature-in
 ## 🍵 credits
 
 * **theme creation**: chatgpt & azula
-* **userstyles matcha theme script & system24 discord theme css**: gemini
+* **stylus import & system24 discord theme css**: gemini & https://catppuccin-userstyles-customizer.uncenter.dev
