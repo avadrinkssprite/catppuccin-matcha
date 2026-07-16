@@ -19,6 +19,8 @@ a cozy, matcha-infused theme for the mindful spirit! this is a custom, nature-in
 
 * azula.cs
 
+* gemini
+
 * https://catppuccin-userstyles-customizer.uncenter.dev/
 
 * https://github.com/refact0r/system24
