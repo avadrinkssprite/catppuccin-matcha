@@ -26,3 +26,5 @@ a cozy, matcha-infused theme for the mindful spirit! this is a custom, nature-in
 * https://catppuccin-userstyles-customizer.uncenter.dev/
 
 * https://github.com/refact0r/system24
+
+* https://github.com/refact0r/midnight-discord
