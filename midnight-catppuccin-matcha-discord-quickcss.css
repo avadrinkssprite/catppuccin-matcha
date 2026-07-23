@@ -1,151 +1,120 @@
-/**
- * @name midnight (catppuccin mocha)
- * @description a dark, customizable discord theme. based on catppuccin mocha theme (https://catppuccin.com).
- * @author refact0r
- * @version 2.1.1
- * @invite nz87hXyvcy
- * @website https://github.com/refact0r/midnight-discord
- * @source https://github.com/refact0r/midnight-discord/blob/master/themes/flavors/midnight-catppuccin-mocha.theme.css
- * @authorId 508863359777505290
- * @authorLink https://www.refact0r.dev
-*/
-
-/* import theme modules */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 
 body {
-    /* font, change to '' for default discord font */
-    --font: 'figtree'; /* change to '' for default discord font */
-    --code-font: ''; /* change to '' for default discord font */
-    font-weight: 400 /* normal text font weight. DOES NOT AFFECT BOLD TEXT */;
+    --font: 'figtree';
+    --code-font: '';
+    font-weight: 400;
 
-    /* sizes */
-    --gap: 12px; /* spacing between panels */
-    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
-    --border-thickness: 1px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 1px;
 
-    /* animation/transition options */
-    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */
-    --list-item-transition: 0.2s ease; /* transition for list items */
-    --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
-    --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+    --border-hover-transition: 0.2s ease;
 
-    /* top bar options */
-    --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
-    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */
-    --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
-    --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
 
-    /* window controls */
-    --custom-window-controls: on; /* off: default window controls, on: custom window controls */
-    --window-control-size: 14px; /* size of custom window controls */
+    --custom-window-controls: on;
+    --window-control-size: 14px;
 
-    /* dms button options */
-    --custom-dms-icon: hide; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
-    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
-    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
-    --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
-    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
-    --custom-dms-background: image; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
-    --dms-background-image-url: url('https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png'); /* url of the background image */
-    --dms-background-image-size: cover; /* size of the background image (css background-size property) */
-    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* fixed color/gradient (css background property) */
+    --custom-dms-icon: hide;
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-subtle);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: image;
+    --dms-background-image-url: url('https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--mauve), var(--red-2));
 
-    /* background image options */
-    --background-image: off; /* off: no background image, on: enable background image (must set url variable below) */
-    --background-image-url: url(''); /* url of the background image */
+    --background-image: off;
+    --background-image-url: url('');
 
-    /* transparency/blur options */
-    /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
-    --transparency-tweaks: off; /* off: no changes, on: remove some elements for better transparency */
-    --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
-    --panel-blur: off; /* off: no changes, on: blur the background of panels */
-    --blur-amount: 12px; /* amount of blur */
-    --bg-floating: var(--bg-3); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
+    --transparency-tweaks: off;
+    --remove-bg-layer: off;
+    --panel-blur: off;
+    --blur-amount: 12px;
+    --bg-floating: var(--bg-3);
 
-    /* chatbar options */
-    --custom-chatbar: off; /* off: default chatbar, separated: chatbar separated from chat */
-    --chatbar-height: 47px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
+    --custom-chatbar: off;
+    --chatbar-height: 47px;
 
-    /* other options */
-    --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
+    --small-user-panel: on;
 }
 
-/* color options */
 :root {
-    --colors: on; /* off: discord default colors, on: midnight custom colors */
+    --colors: on;
 
-    /* text colors */
-    --text-0: var(--bg-3); /* text on colored elements */
-    --text-1: #e8f4d2; /* rosewater */
-    --text-2: #d8ead0; /* text */
-    --text-3: #c1d0b8; /* subtext1 */
-    --text-4: #9eae96; /* subtext0 */
-    --text-5: #6f8a63; /* overlay1 / muted elements */
+    --text-0: #1a2418;
+    --text-1: #e8f4d2;
+    --text-2: #d8ead0;
+    --text-3: #c1d0b8;
+    --text-4: #8a9b82;
+    --text-5: #6f8a63;
 
-    /* background and dark colors */
-    --bg-1: #40523b; /* surface2 */
-    --bg-2: #344630; /* surface1 */
-    --bg-3: #2b3927; /* surface0 */
-    --bg-4: #1a2418; /* base */
-    --hover: hsla(109, 18%, 35%, 0.1); /* transparent hover state based on surface2 */
-    --active: hsla(109, 18%, 35%, 0.2); /* transparent active state */
-    --active-2: hsla(109, 18%, 35%, 0.3); 
-    --message-hover: hsla(109, 20%, 10%, 0.15); 
+    --bg-1: #40523b;
+    --bg-2: #344630;
+    --bg-3: #151d13;
+    --bg-4: #1a2418;
+    --hover: hsla(100, 15%, 53%, 0.1);
+    --active: hsla(100, 15%, 53%, 0.2);
+    --active-2: hsla(100, 15%, 53%, 0.3);
+    --message-hover: hsla(0, 0%, 0%, 0.1);
 
-    /* accent colors */
-    --accent-1: var(--green-2); /* using green/mauve as the signature accent */
-    --accent-2: var(--green-3); 
-    --accent-3: var(--green-4); 
-    --accent-4: var(--green-5); 
-    --accent-5: #bde3a3; /* pink */
-    --accent-new: var(--red-3); /* red alert elements */
-    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); 
-    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); 
-    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); 
-    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); 
+    --accent-1: #a6d189;
+    --accent-2: #a6d189;
+    --accent-3: #a6d189;
+    --accent-4: #bde3a3;
+    --accent-5: #c4d684;
+    --accent-new: var(--accent-2);
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
 
-    /* status indicator colors */
-    --online: var(--green-3); 
-    --dnd: var(--red-3); 
-    --idle: var(--yellow-3); 
-    --streaming: var(--lavender); 
-    --offline: var(--text-5); 
+    --online: #a6d189;
+    --dnd: #e67e80;
+    --idle: #e5d88a;
+    --streaming: #c4d684;
+    --offline: var(--text-4);
 
-    /* border colors */
-    --border-light: var(--hover); 
-    --border: var(--active); 
-    --border-hover: var(--accent-2); 
-    --button-border: rgba(255, 255, 255, 0.08); 
+    --border-light: var(--hover);
+    --border: var(--active);
+    --border-hover: var(--active);
+    --button-border: hsl(100, 0%, 100%, 0.1);
 
-    /* base colors (Catppuccin Matcha Palette Mapping) */
     --red-1: #e67e80;
     --red-2: #e67e80;
     --red-3: #e67e80;
     --red-4: #e67e80;
     --red-5: #e67e80;
 
-    --green-1: #bde3a3; /* pink acts light here */
-    --green-2: #a6d189; /* mauve / green */
-    --green-3: #a6d189; 
-    --green-4: #8fc9a5; /* teal / sky */
-    --green-5: #6f8a63; /* sapphire */
+    --green-1: #a6d189;
+    --green-2: #a6d189;
+    --green-3: #a6d189;
+    --green-4: #a6d189;
+    --green-5: #a6d189;
 
-    --blue-1: #8fc9a5; /* sky / teal */
-    --blue-2: #6f8a63; /* sapphire */
-    --blue-3: #58704f; /* blue */
+    --blue-1: #58704f;
+    --blue-2: #58704f;
+    --blue-3: #58704f;
     --blue-4: #58704f;
-    --blue-5: #344630;
+    --blue-5: #58704f;
 
-    --yellow-1: #e5d88a; /* peach */
-    --yellow-2: #d8b56d; /* yellow / maroon */
-    --yellow-3: #d8b56d;
-    --yellow-4: #d8b56d;
-    --yellow-5: #d8b56d;
+    --yellow-1: #e5d88a;
+    --yellow-2: #e5d88a;
+    --yellow-3: #e5d88a;
+    --yellow-4: #e5d88a;
+    --yellow-5: #e5d88a;
 
-    --purple-1: #e8f4d2; /* rosewater */
-    --purple-2: #d8ead0; /* flamingo */
-    --purple-3: #c4d684; /* lavender */
+    --purple-1: #c4d684;
+    --purple-2: #c4d684;
+    --purple-3: #c4d684;
     --purple-4: #c4d684;
-    --purple-5: #a6d189;
+    --purple-5: #c4d684;
 }
